@@ -19,7 +19,6 @@ function App() {
     <div className="page-shell">
       <header className="topbar">
         <div>
-          <p className="eyebrow">DevOps Basic Assignment</p>
           <h1>Student Manager</h1>
         </div>
         <nav className="nav-links">
@@ -152,7 +151,7 @@ function StudentsPage() {
       <section className="panel table-panel">
         <div className="panel-header">
           <h3>Danh sách sinh viên</h3>
-          <p>{status.loading ? 'Đang tải dữ liệu...' : 'Dữ liệu lấy trực tiếp từ backend'}</p>
+          <p>{status.loading ? 'Đang tải dữ liệu...' : '...'}</p>
         </div>
 
         {status.error ? <p className="alert error">{status.error}</p> : null}
@@ -213,9 +212,6 @@ function AboutPage() {
           <strong>{location.pathname}</strong>
         </div>
       </div>
-      <p className="about-note">
-        Đây là trang được dùng để chụp ảnh minh chứng khi ứng dụng đang chạy.
-      </p>
     </section>
   );
 }
